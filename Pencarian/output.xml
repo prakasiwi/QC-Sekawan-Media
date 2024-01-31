@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-31T13:07:07.762869" rpa="false" schemaversion="5">
+<suite id="s1" name="Pencarian" source="C:\Users\LOQ\kuliah\sekawan\pencarian\pencarian.robot">
+<test id="s1-t1" name="Pencarian Data" line="11">
+<kw name="login" owner="login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-31T13:07:08.021122" level="INFO">Opening browser 'chrome' to base url 'https://aps-rejanglebong.skwn.dev/dev/index.php/login'.</msg>
+<arg>${url}</arg>
+<arg>${web}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-31T13:07:08.021122" elapsed="3.971510"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-31T13:07:11.993641" elapsed="0.134484"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-31T13:07:14.128335" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-31T13:07:12.128125" elapsed="2.000210"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-31T13:07:14.128335" level="INFO">Typing text 'candidat' into text field '//*[@id="username"]'.</msg>
+<arg>//*[@id="username"]</arg>
+<arg>candidat</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T13:07:14.128335" elapsed="0.096286"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-01-31T13:07:14.224621" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg time="2024-01-31T13:07:14.259216" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//*[@id="password"]</arg>
+<arg>password123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T13:07:14.224621" elapsed="0.086936"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-31T13:07:14.311557" level="INFO">Clicking button '//*[@id="kt_login_signin_submit"]'.</msg>
+<arg>//*[@id="kt_login_signin_submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T13:07:14.311557" elapsed="0.070480"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-31T13:07:19.382505" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-31T13:07:14.382037" elapsed="5.000468"/>
+</kw>
+<status status="PASS" start="2024-01-31T13:07:08.017118" elapsed="11.365387"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-31T13:07:19.382505" level="INFO">Clicking element '//*[@id="kt_aside_menu"]/ul/li[3]/a'.</msg>
+<arg>//*[@id="kt_aside_menu"]/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T13:07:19.382505" elapsed="0.069156"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-31T13:07:22.452070" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-31T13:07:19.451661" elapsed="3.000409"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-31T13:07:22.452070" level="INFO">Typing text '3262353232623230' into text field '//*[@id="table-inputpemilih_dtSearch"]'.</msg>
+<arg>//*[@id="table-inputpemilih_dtSearch"]</arg>
+<arg>3262353232623230</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T13:07:22.452070" elapsed="0.140041"/>
+</kw>
+<kw name="Scroll Page Down">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-01-31T13:07:22.592111" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight);
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-01-31T13:07:22.592111" elapsed="0.005940"/>
+</kw>
+<status status="PASS" start="2024-01-31T13:07:22.592111" elapsed="0.005940"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-31T13:07:24.598259" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-31T13:07:22.598051" elapsed="2.000208"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>//*[@id="table-inputpemilih_dtSearch"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T13:07:24.598259" elapsed="0.027015"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-31T13:07:24.625274" level="INFO">Typing text 'yusuf' into text field '//*[@id="table-inputpemilih_dtSearch"]'.</msg>
+<arg>//*[@id="table-inputpemilih_dtSearch"]</arg>
+<arg>yusuf</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T13:07:24.625274" elapsed="0.077817"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-31T13:07:26.707193" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-31T13:07:24.707101" elapsed="2.000092"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>//*[@id="table-inputpemilih_dtSearch"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T13:07:26.707193" elapsed="0.028957"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-31T13:07:26.736150" level="INFO">Typing text 'jalan menta' into text field '//*[@id="table-inputpemilih_dtSearch"]'.</msg>
+<arg>//*[@id="table-inputpemilih_dtSearch"]</arg>
+<arg>jalan menta</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T13:07:26.736150" elapsed="0.108649"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-31T13:07:28.849390" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-31T13:07:26.848801" elapsed="2.000589"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>//*[@id="table-inputpemilih_dtSearch"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T13:07:28.849390" elapsed="0.030610"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-31T13:07:28.880000" level="INFO">Typing text 'TPS001' into text field '//*[@id="table-inputpemilih_dtSearch"]'.</msg>
+<arg>//*[@id="table-inputpemilih_dtSearch"]</arg>
+<arg>TPS001</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T13:07:28.880000" elapsed="0.082009"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-31T13:07:30.962452" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-31T13:07:28.962009" elapsed="2.000443"/>
+</kw>
+<status status="PASS" start="2024-01-31T13:07:08.017118" elapsed="22.945334"/>
+</test>
+<status status="PASS" start="2024-01-31T13:07:07.763975" elapsed="23.199495"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Pencarian">Pencarian</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

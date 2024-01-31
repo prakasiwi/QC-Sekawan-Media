@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-31T15:54:46.260521" rpa="false" schemaversion="5">
+<suite id="s1" name="Filter" source="C:\Users\LOQ\kuliah\sekawan\filterData\filter.robot">
+<test id="s1-t1" name="Filter Data" line="10">
+<kw name="login" owner="login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:54:46.457520" level="INFO">Opening browser 'chrome' to base url 'https://aps-rejanglebong.skwn.dev/dev/index.php/login'.</msg>
+<arg>${url}</arg>
+<arg>${web}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-31T15:54:46.457520" elapsed="6.758571"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-31T15:54:53.216091" elapsed="0.131735"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-31T15:54:55.348085" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-31T15:54:53.347826" elapsed="2.000259"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:54:55.349706" level="INFO">Typing text 'candidat' into text field '//*[@id="username"]'.</msg>
+<arg>//*[@id="username"]</arg>
+<arg>candidat</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T15:54:55.348085" elapsed="0.151856"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:54:55.499941" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg time="2024-01-31T15:54:55.560261" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//*[@id="password"]</arg>
+<arg>password123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T15:54:55.499941" elapsed="0.135457"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:54:55.635398" level="INFO">Clicking button '//*[@id="kt_login_signin_submit"]'.</msg>
+<arg>//*[@id="kt_login_signin_submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T15:54:55.635398" elapsed="0.111802"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-31T15:55:00.747970" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-31T15:54:55.747725" elapsed="5.000245"/>
+</kw>
+<status status="PASS" start="2024-01-31T15:54:46.453513" elapsed="14.294457"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:55:00.748978" level="INFO">Clicking element '//*[@id="kt_aside_menu"]/ul/li[3]/a'.</msg>
+<arg>//*[@id="kt_aside_menu"]/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T15:55:00.748978" elapsed="23.787444"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-31T15:55:27.538271" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-31T15:55:24.536422" elapsed="3.001849"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:55:27.540389" level="INFO">Clicking button '//*[@id="cardDataPemilih"]/div/div[1]/div[2]/div/div[1]/div/div[2]/button'.</msg>
+<arg>//*[@id="cardDataPemilih"]/div/div[1]/div[2]/div/div[1]/div/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T15:55:27.538271" elapsed="0.122356"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-31T15:55:29.661424" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-31T15:55:27.660627" elapsed="2.001337"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:55:29.663014" level="INFO">Selecting options from selection list '//*[@id="filter_provinsi_id"]' by value 7fd2c16526aa7c1ab7a409a99590438c.</msg>
+<arg>//*[@id="filter_provinsi_id"]</arg>
+<arg>7fd2c16526aa7c1ab7a409a99590438c\</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-01-31T15:55:29.663014" elapsed="0.149982"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>//*[@id="filter_kota_id"]</arg>
+<arg>Rejang Lebong</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-01-31T15:55:29.812996" elapsed="0.262496"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:55:30.075492" level="INFO">Selecting options from selection list '//*[@id="filter_kota_id"]' by label Rejang Lebong.</msg>
+<arg>//*[@id="filter_kota_id"]</arg>
+<arg>Rejang Lebong</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-31T15:55:30.075492" elapsed="0.126163"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>//*[@id="filter_kecamatan_id"]</arg>
+<arg>Curup Utara</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-01-31T15:55:30.203186" elapsed="0.266441"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:55:30.470637" level="INFO">Selecting options from selection list '//*[@id="filter_kecamatan_id"]' by label Curup Utara.</msg>
+<arg>//*[@id="filter_kecamatan_id"]</arg>
+<arg>Curup Utara</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-31T15:55:30.470637" elapsed="0.124447"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>//*[@id="filter_kelurahan_id"]</arg>
+<arg>Tunas Harapan</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-01-31T15:55:30.595903" elapsed="0.499862"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:55:31.095765" level="INFO">Selecting options from selection list '//*[@id="filter_kelurahan_id"]' by label Tunas Harapan.</msg>
+<arg>//*[@id="filter_kelurahan_id"]</arg>
+<arg>Tunas Harapan</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-31T15:55:31.095765" elapsed="0.142065"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>//*[@id="filter_tps_id"]</arg>
+<arg>TPS001 - Tunas Harapan</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-01-31T15:55:31.237830" elapsed="0.265813"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:55:31.503643" level="INFO">Selecting options from selection list '//*[@id="filter_tps_id"]' by label TPS001 - Tunas Harapan.</msg>
+<arg>//*[@id="filter_tps_id"]</arg>
+<arg>TPS001 - Tunas Harapan</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-31T15:55:31.503643" elapsed="0.131280"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:55:31.636018" level="INFO">Clicking button '//*[@id="table-inputpemilih_id-modal"]/div/div/form/div[2]/button[2]'.</msg>
+<arg>//*[@id="table-inputpemilih_id-modal"]/div/div/form/div[2]/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-31T15:55:31.636018" elapsed="0.147380"/>
+</kw>
+<kw name="Scroll Page Down">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-01-31T15:55:31.783398" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight);
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-01-31T15:55:31.783398" elapsed="0.007945"/>
+</kw>
+<status status="PASS" start="2024-01-31T15:55:31.783398" elapsed="0.007945"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-31T15:55:36.795789" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-31T15:55:31.791343" elapsed="5.004446"/>
+</kw>
+<status status="PASS" start="2024-01-31T15:54:46.453513" elapsed="50.342276"/>
+</test>
+<status status="PASS" start="2024-01-31T15:54:46.262017" elapsed="50.535794"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Filter">Filter</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
